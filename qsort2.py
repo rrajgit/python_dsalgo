@@ -15,9 +15,11 @@ def partition(A, left ,right):
         # element <= pivot then we if 
         if A[i] <= pivot:
             j += 1
-            A[i], A[j] = A[j], A[i]
+            if i != j
+                A[i], A[j] = A[j], A[i]
 
-    A[left], A[j] = A[j], A[left]
+    if left != j:
+        A[left], A[j] = A[j], A[left]
     
     return j
     
