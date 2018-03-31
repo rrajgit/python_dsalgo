@@ -5,7 +5,7 @@ def pair_sum(arr, target):
     for num in arr:
         val = target - num
         if val in seen:
-            res.append((num, val))
+            res.append((min(num, val), max(num, val)))
         
         seen.add(num)
     
